@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JurosCompostos">
+
+    <TextView
+        android:id="@+id/resultadoJC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/voltarJC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5A2222"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/valorJuC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729" />
+
+    <TextView
+        android:id="@+id/tvCapitalJC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capital:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvTaxaJC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taxa de Juros:"
+        android:textColor="#000000"
+        android:textSize="21sp"
+        android:typeface="sans"
+        app:autoSizeTextType="none"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvJurosCom"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif"
+        android:text="Juros Compostos"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:typeface="sans"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/txtCapitalJC"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.252"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/porc"
+        android:layout_width="19dp"
+        android:layout_height="20dp"
+        android:text="%"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvMesJC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mês(es):"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/txtTaxaJC"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txtmesJC"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/calcularJC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#5A2222"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
