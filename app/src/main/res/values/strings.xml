@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Math</string>
     <string name="calcular_juros_simples">Calcular Juros Simples</string>
     <string name="taxa_de_juros">Taxa de Juros:</string>
     <string name="juros_compostos">Juros Compostos</string>
@@ -8,4 +8,5 @@
     <string name="voltar">Voltar</string>
     <string name="resultado">Resultado</string>
     <string name="calcular">Calcular</string>
+    <string name="genrenciado_de_conta">Genrenciado de Conta</string>
 </resources>

@@ -64,7 +64,7 @@ public class DescontoSimples extends AppCompatActivity {
                 } else {
 
                     calculo.setText("Valor Total = " + (rs.format(0.00)) + " R$");
-                    CalDeSim.setText("Desconto Total = null");
+                    CalDeSim.setText("Desconto Total");
                 }
             } catch (Exception ex) {
                 TextView calculo = (TextView) findViewById(R.id.resultadoDS);
